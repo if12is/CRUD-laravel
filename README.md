@@ -1,2 +1,2 @@
 # CRUD-laravel
- crud quiry builder
+ CRUD with quiry builder in laravel
