@@ -3,10 +3,10 @@
 @section('content')
     <div class="container my-5">
         <h1 class="title text-center" style="
-        font-family: cursive;">All postes</h1>
+        font-family: cursive;">All posts</h1>
         <div class="main-container
             my-5">
-            <table class="table bg-indigo-800">
+            <table class="table bg-indigo-800 m-3" id="table_id">
                 <thead class="text-light">
                     <tr class="text-center">
                         <th scope="col" class="bg-indigo-900">#ID</th>
@@ -29,7 +29,17 @@
                             </td>
                         </tr>
                     @endforeach
-
+                    {{-- @for ($i = 0; $i <= 100; $i++)
+                        <tr>
+                            <th scope="row" class="bg-indigo-700 text-light">{{ $i }}</th>
+                            <td class="font-bolder">Title{{ $i }}</td>
+                            <td class="text-dark font-semibold"> body{{ $i }}</td>
+                            <td>
+                                <a type="button" href="#" class="btn btn-success btn-xs">Edit</a>
+                                <a type="button" href="#" class="btn btn-danger btn-xs">Delete</a>
+                            </td>
+                        </tr>
+                    @endfor --}}
                 </tbody>
             </table>
         </div>
